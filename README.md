@@ -16,9 +16,11 @@ In your `Application` class or `MainActivity`:
 
 ```kotlin
 AnalyticsManager.init(context)
+```
 3. Tracking Events
 You can track any event with custom parameters:
 
+```kotlin
 // Simple event
 AnalyticsManager.trackEvent("App_Opened", mapOf("user_id" to "123"))
 
