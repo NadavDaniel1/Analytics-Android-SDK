@@ -17,7 +17,7 @@ In your `Application` class or `MainActivity`:
 ```kotlin
 AnalyticsManager.init(context)
 ```
-3. Tracking Events
+### 3. Tracking Events
 You can track any event with custom parameters:
 
 ```kotlin
