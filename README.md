@@ -19,8 +19,6 @@ AnalyticsManager.init(context)
 3. Tracking Events
 You can track any event with custom parameters:
 
-Kotlin
-
 // Simple event
 AnalyticsManager.trackEvent("App_Opened", mapOf("user_id" to "123"))
 
@@ -30,6 +28,7 @@ AnalyticsManager.trackEvent("Level_Complete", mapOf(
     "score" to 4500,
     "time_remaining" to 120
 ))
+```
 🛠 Features
 Offline Support: Events are stored locally when there is no internet connection.
 
