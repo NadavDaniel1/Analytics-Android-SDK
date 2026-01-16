@@ -39,4 +39,5 @@ Generic Data: Supports flexible key-value pairs for event properties.
 
 🔗 Backend
 This SDK communicates with the Analytics Python Server.
+
 [Link to Backend Repository](https://github.com/NadavDaniel1/Analytics-Server)
