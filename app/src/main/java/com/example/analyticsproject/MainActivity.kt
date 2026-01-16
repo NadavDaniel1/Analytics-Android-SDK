@@ -12,38 +12,45 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.analyticsproject.ui.theme.AnalyticsProjectTheme
-import com.example.myanalyticssdk.AnalyticsManager // ייבוא ה-SDK שלך
+import com.example.myanalyticssdk.AnalyticsManager // Import your custom SDK
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         // ==========================================
-        // 1. כאן אנחנו מפעילים את ה-SDK שבנית!
+        // 1. Initialize the Analytics SDK
         // ==========================================
+        // This sets up the database and network configurations using the application context.
         AnalyticsManager.init(this)
 
-        // 2. שולחים אירוע ניסיון כדי לראות שזה נשמר ב-DB
+        // ==========================================
+        // 2. Track Sample Events
+        // ==========================================
+
+        // A. Simple test event to verify database storage
         AnalyticsManager.trackEvent("Button_Clicked", mapOf("user_type" to "student"))
 
-        // 1. דוגמה לנתוני תנועה בין מסכים
+        // B. Example of tracking screen navigation flow
         AnalyticsManager.trackEvent("Screen_Navigation", mapOf(
             "from_screen" to "Login",
             "to_screen" to "Home"
         ))
 
-// 2. דוגמה למשך זמן שימוש (נניח המשתמש היה 45 שניות)
+        // C. Example of tracking session duration (e.g., user stayed for 45 seconds)
         AnalyticsManager.trackEvent("Session_Ended", mapOf(
             "duration_seconds" to 45
         ))
 
-// 3. דוגמה לפרטי מכשיר
+        // D. Example of tracking device information dynamically
         AnalyticsManager.trackEvent("Device_Info", mapOf(
-            "model" to android.os.Build.MODEL, // שולף אוטומטית את דגם המכשיר
-            "os_version" to android.os.Build.VERSION.SDK_INT
+            "model" to android.os.Build.MODEL, // Automatically retrieves the device model
+            "os_version" to android.os.Build.VERSION.SDK_INT // Retrieves the Android version
         ))
 
-        // מכאן זה הקוד הרגיל של התצוגה (לא נגענו בו)
+        // ==========================================
+        // 3. Standard UI Setup (Jetpack Compose)
+        // ==========================================
         enableEdgeToEdge()
         setContent {
             AnalyticsProjectTheme {
@@ -73,4 +80,3 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
-
