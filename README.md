@@ -38,4 +38,5 @@ Automatic Sync: Events are dispatched to the server automatically when possible.
 Generic Data: Supports flexible key-value pairs for event properties.
 
 🔗 Backend
-This SDK communicates with the Analytics Python Server. [Link to Backend Repository](https://github.com/NadavDaniel1/Analytics-Server)
+This SDK communicates with the Analytics Python Server.
+[Link to Backend Repository](https://github.com/NadavDaniel1/Analytics-Server)
