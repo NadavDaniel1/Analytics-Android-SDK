@@ -47,10 +47,10 @@ You can track any event with custom parameters:
 
 ```kotlin
 // Example: User clicked a button
-AnalyticsManager.getInstance().logEvent("Button_Clicked")
+AnalyticsManager.getInstance().trackEvent("Button_Clicked")
 
 // Example: User completed a purchase
-AnalyticsManager.getInstance().logEvent("Purchase_Completed")
+AnalyticsManager.getInstance().trackEvent("Purchase_Completed")
 
 // Complex event
 AnalyticsManager.trackEvent("Level_Complete", mapOf(
