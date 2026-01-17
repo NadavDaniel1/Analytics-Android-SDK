@@ -69,4 +69,4 @@ This SDK is designed to work with a custom backend. You can view the server-side
 ###🛡 Requirements
 Android SDK 21+
 
-Internet Permission in the host app (<uses-permission android:name="android.permission.INTERNET" />)
+Internet Permission in the host app <uses-permission android:name="android.permission.INTERNET" />
