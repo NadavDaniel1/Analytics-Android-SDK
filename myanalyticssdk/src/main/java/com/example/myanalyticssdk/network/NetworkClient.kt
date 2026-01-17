@@ -14,7 +14,7 @@ internal object NetworkClient {
      * NOTE: "10.0.2.2" is a special IP address used by the Android Emulator
      * to connect to "localhost" on the developer's host machine.
      */
-    private const val BASE_URL = "http://10.0.2.2:5000"
+    private const val BASE_URL = "https://analytics-server-nadav.onrender.com/"
 
     /**
      * The singleton instance of the AnalyticsApi.
