@@ -65,8 +65,3 @@ This SDK is designed to work with a custom backend. You can view the server-side
 
 [Link to Backend Repository](https://github.com/NadavDaniel1/Analytics-Server)
 
-
-###🛡 Requirements
-Android SDK 21+
-
-Internet Permission in the host app <uses-permission android:name="android.permission.INTERNET" />
