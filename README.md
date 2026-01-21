@@ -47,10 +47,10 @@ You can track any event with custom parameters:
 
 ```kotlin
 // Example: User clicked a button
-AnalyticsManager.getInstance().logEvent("Button_Clicked")
+AnalyticsManager.getInstance().trackEvent("Button_Clicked")
 
 // Example: User completed a purchase
-AnalyticsManager.getInstance().logEvent("Purchase_Completed")
+AnalyticsManager.getInstance().trackEvent("Purchase_Completed")
 
 // Complex event
 AnalyticsManager.trackEvent("Level_Complete", mapOf(
@@ -65,8 +65,3 @@ This SDK is designed to work with a custom backend. You can view the server-side
 
 [Link to Backend Repository](https://github.com/NadavDaniel1/Analytics-Server)
 
-
-###🛡 Requirements
-Android SDK 21+
-
-Internet Permission in the host app (<uses-permission android:name="android.permission.INTERNET" />)
