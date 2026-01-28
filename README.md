@@ -3,6 +3,14 @@
 This repository contains the Android client library and a demo application for the Analytics Project.
 This SDK allows developers to track user events, handle offline scenarios, and sync data seamlessly with a remote backend.
 
+### 🎥 Live Demo
+Simulating a user purchase event.
+Notice how the SDK captures the click, logs it locally, and syncs it to the server immediately (seen in Logcat):
+
+![sdk_demo](https://github.com/user-attachments/assets/3f82bb37-e279-401c-9e6b-94ede1c99e08)
+
+![dashboard_view](https://github.com/user-attachments/assets/65d7ba0b-e214-46b5-8c76-4685d6af7cad)
+
 ## 🚀 Features
 
 * **Easy Integration:** Simple setup with minimal configuration.
