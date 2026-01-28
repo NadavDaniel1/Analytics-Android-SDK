@@ -11,7 +11,8 @@ Notice how the SDK captures the click, logs it locally, and syncs it to the serv
 
 
 
-![dashboard_view](https://github.com/user-attachments/assets/65d7ba0b-e214-46b5-8c76-4685d6af7cad)
+![dashboard_view](<img width="1884" height="850" alt="dashborad" src="https://github.com/user-attachments/assets/483979fc-d985-4c45-aea0-50525456c7b8" />
+)
 
 ## 🚀 Features
 
